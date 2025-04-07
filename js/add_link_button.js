@@ -1,10 +1,9 @@
 {
     function button_click() {
         /**@type {HTMLAnchorElement[]} */
-        const links_array = [...document.querySelectorAll('li.list-group-item > a')];
+        const links_array = [...document.querySelectorAll('div.flex.cursor-pointer.items-center.justify-between.gap-1.px-4.py-3')];
         links_array.forEach(element => {
-            const link = element.href;
-            window.open(link);
+            element.click();
         });
     }
 
